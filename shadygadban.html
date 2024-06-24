@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone-book">
+        <h1>Phone Book</h1>
+        <input type="text" id="search" placeholder="Search...">
+        <div id="contact-list">
+            <div class="contact">
+                <img src="https://via.placeholder.com/50" alt="Bertie Yates">
+                <div class="contact-info">
+                    <h2>Bertie Yates</h2>
+                    <p>Email: bertie@example.com</p>
+                    <p>Location: New York</p>
+                    <p>Phone: 123-456-7890</p>
+                </div>
+                <div class="contact-actions">
+                    <button class="info">i</button>
+                    <button class="edit">✎</button>
+                    <button class="delete">🗑</button>
+                </div>
+            </div>
+            <!-- More contacts will go here -->
+        </div>
+        <button id="add-contact">Add Contact</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2>Edit Contact</h2>
+            <input type="text" id="contact-name" placeholder="Name">
+            <input type="email" id="contact-email" placeholder="Email">
+            <input type="text" id="contact-location" placeholder="Location">
+            <input type="tel" id="contact-phone" placeholder="Phone">
+            <button id="save-contact">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
